@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    ;
+}
+
+body {
+    background-image: url(Hotdog_Bckgrnd_Pattern_2.png);
+}
+
+.header {
+    /* min-height: 120vh; */
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+header {
+    background-color: rgb(238, 28, 37);
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 1px;
+}
+
+.box-area img {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    ;
+}
+
+#logoheader img {
+    width: 140px;
+    flex-grow: 3;
+    flex-grow: 4;
+    flex-basis: 20%;
+    align-self: center;
+}
+
+button {
+    background-color: rgb(238, 28, 37);
+    border: none;
+}
+
+.box-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media (max-width: 300px) {
+        position: fixed;
+        display: fixed;
+    }
+}
+
+.fas {
+    color: white;
+    margin: 0px 0px;
+    cursor: pointer;
+    padding: 0px 0;
+    font-size: 30px;
+    width: 50px;
+}
+
+.fal {
+    color: white;
+    margin: 0px 0px;
+    cursor: pointer;
+    padding: 0px 0;
+    font-size: 30px;
+    width: 60px;
+}
+
+.navbar {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    float: left;
+    padding: 4px;
+    color: rgb(238, 28, 37);
+    text-decoration: none;
+    font-size: 30px;
+    width: 20%;
+    text-align: center;
+    border-top-width: 8px;
+    border-top-style: solid;
+    border-color: #F0141E;
+    border-width: 5px;
+    border-radius: 12px;
+    margin: 1px;
+    box-sizing: border-box;
+    background-color: #ffba08;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar a:hover {
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.logo img {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 30%;
+    border-style: solid;
+}
+
+.logo {
+    /* position: absolute;
+    width: 90%; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(trailerhd.jpg);
+}
+
+.linha {
+    border-top: 1px solid #343a40;
+    width: 80%;
+    margin: 25px auto;
+    line-height: 1em;
+}
+
+
+/*---- lanches ----*/
+
+.lanches {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.row {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lanches p {
+    color: black;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 10px 0 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.lanches-col {
+    flex-basis: 31%;
+    background-color: rgb(238, 28, 37);
+    border-radius: 30%;
+    margin-bottom: 27px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.lanches-col h3 {
+    color: white;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lanches-col p {
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.lanches-col:hover {
+    background-color: orange;
+}
+
+.lanches-col img {
+    border: solid;
+    border-radius: 15%;
+    border-color: white;
+    width: 200px;
+    height: 200px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+/*---- bebidas ----*/
+
+.bebidas {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.bebidas-col {
+    flex-basis: 31%;
+    background-color: rgb(238, 28, 37);
+    border-radius: 30%;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.bebidas p {
+    color: white;
+    font-size: 20px;
+    padding: 10px 0 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bebidas-col:hover {
+    background-color: orange;
+}
+
+.bebidas-col h3 {
+    color: white;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bebidas h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.bebidas-col img {
+    border: solid;
+    border-radius: 15%;
+    border-color: white;
+    width: 200px;
+    height: 200px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+/*---- footer ----*/
+
+
+/* .footer p {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 10px;
+    padding: 5px;
+} */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    ;
+    color: white;
+    padding: 30px 0;
+    background-color: red;
+    padding-top: 2px;
+}
+
+/* #copyright {} */
+
+
+/* .footer ul li.mastercard {
+    font-size: 14px;
+    background: url(japagod/mastercard-logo-2-1.png) no-repeat;
+    transform: scale(1.8);
+    width: 45px;
+    position: relative;
+    left: 10px;
+}
+
+.footer-stamps-legal ul li.visa {
+    font-size: 14px;
+    background: url(japagod/visa-logo-5.png) no-repeat;
+    transform: scale(1.8);
+    width: 45px;
+    position: relative;
+    left: 10px;
+}
+
+.footer-stamps-legal ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+    background: no-repeat;
+    text-indent: -99999px;
+    height: 25px;
+} */
+
+.footer h4 {
+    font-size: 70px;
+    color: #dc2f02;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.icons .fab {
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 30px;
+}
+
+.icons button .fab {
+    background-color: red;
+    border: none;
+}
+
+.icons button {
+    background-color: red;
+}
+
+@media (max-width: 400px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.linha {
+    border-top: 1px solid #343a40;
+    width: 80%;
+    margin: 25px auto;
+    line-height: 1em;
+}
+
+.cartoes-col {
+    display: inline-block;
+}
+
+.cartoes-col img {
+    width: 3%;
+    border-radius: 10%;
+    width: 4%;
+}
+
+.signature {
+    padding-top: 1%;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+/* --                           localizacao                  --*/
+
+.localizacao {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+    
+.localizacao iframe {
+    width: 100%;
+}
+    
+.contato {
+    margin: auto;
+}
+    
+.contato-col {
+    /* display: flex; */
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 30px;
+    color:rgb(238, 28, 37);
+    flex-basis: 20%;
+    background-color: rgb(243, 239, 217);
+    border-radius: 10%;
+    margin-bottom: 27px;
+    padding: 0px 12px;
+    margin: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.home {
+    justify-content: center;
+    
+}
+
+.phone {
+    justify-content: center;
+}
+
+.clock {
+    justify-content: center;
+}
+    
+.contato-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px
+}
+    
+.contato-col div .fa {
+    font-size: 35px;
+    color:rgb(238, 28, 37);
+    margin-top: 15%;
+    justify-content: center;
+}
+    
+.row1 {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#canto {
+    /* display: none; */
+    position: fixed;
+    top: 45%;
+    left: 0;
+    background:rgb(238, 28, 37);
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    max-width: 170px;
+    padding: 13px 0;
+    z-index: 9000;
+}
